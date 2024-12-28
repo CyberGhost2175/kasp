@@ -1,0 +1,12 @@
+specVersion: "v1beta"
+serviceId: "fake-kaspi"
+location: "us-central1"
+schema:
+  source: "./schema"
+  datasource:
+    postgresql:
+      database: "fdcdb"
+      cloudSql:
+        instanceId: "fake-kaspi-fdc"
+      # schemaValidation: "COMPATIBLE"
+connectorDirs: ["./connector"]
